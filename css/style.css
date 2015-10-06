@@ -1,10 +1,7 @@
 /* CSS Hexagons */
 .container {
-  position: relative;
   display: table;
   margin: auto;
-  top: 50%;
-  transform: translateY(-50%);
 }
 
 ol.even {
