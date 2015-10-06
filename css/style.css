@@ -76,3 +76,7 @@ ol.odd {
   vertical-align: middle;
   line-height: 1em; 
 }
+
+a {
+  outline: 0;
+}
