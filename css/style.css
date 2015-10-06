@@ -1,0 +1,82 @@
+/* CSS Hexagons */
+.container {
+  position: relative;
+  display: table;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+ol.even {
+  position: relative;
+  left: 5.45455em;
+}
+
+ol.odd {
+  position: relative;
+  margin-top: -11%;
+  margin-bottom: -11%;
+}
+
+.hex {
+  position: relative;
+  margin: 1em auto;
+  width: 6em;
+  height: 10.2em;
+  border-radius: 1em/.5em;
+  background: #74cddb;
+  transform: rotate(-90deg);
+  display: inline-block;
+  margin-right: 4.61538em;
+  transition: all 150ms ease-in-out;
+}
+
+.hex a {
+  display:block;
+}
+
+.hex:before, .hex:after {
+  position: absolute;
+  width: inherit; height: inherit;
+  border-radius: inherit;
+  background: inherit;
+  content: '';
+}
+.hex:before {
+  transform: rotate(60deg);
+}
+.hex:after {
+  transform: rotate(-60deg);
+}
+
+.hex:hover {
+
+/* Change opacity of the hexagon on hover */
+  opacity: 0.7; */
+  cursor: pointer;
+
+/* Or make a white shadow around the text */
+  text-shadow: 0 0 10px white;
+}
+
+/* Undo rotation so the text displays correctly */
+
+.hex > span {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  margin:0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  line-height: 10.2em;
+  transform: rotate(90deg);
+  text-align: center;
+  z-index: 20;
+  color: #fff
+}
+.hex > span > span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1em; 
+}
