@@ -30,6 +30,7 @@ ol.odd {
 
 .hex a {
   display:block;
+  text-decoration: none;
 }
 
 .hex:before, .hex:after {
@@ -79,4 +80,5 @@ ol.odd {
 
 a {
   outline: 0;
+  text-decoration: none;
 }
